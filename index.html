@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BlackJack Web App</title>
+        <link rel="stylesheet" href="blackjack_stylesheet.css">
+        <script src="jquery-3.6.3.min.js"></script>
+        <script src="blackjack.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+                <div class="dealer-cards" id="dealer-cards">
+                    <img id="hidden-card" src="cards/BACK.png">
+                </div>
+                <div class="dealer-card-count">
+                    <h2 class="vertical-align biggerh2">DEALER: <span id="dealer-card-count" class="bold">???</span></h2>
+                </div>
+                <div class="player-cards" id="player-cards">
+                </div>
+                <div class="player-card-count">
+                    <h2 class="vertical-align biggerh2">PLAYER: <span id="player-card-count" class="bold"></span></h2>
+                </div>
+                <div class="hit-button">
+                    <button id="hit-button" class="vertical-align">HIT</button>
+                </div>
+                <div class="stay-button">
+                    <button id="stay-button" class="vertical-align">STAY</button>
+                </div>
+                <div class="game-stats">
+                    <h2>GAME STATS:</h2>
+                    <ul>
+                        <li>Cards Left: <span id="cards-left"></span></li>
+                        <li>Total Wins: <span id="total-wins"></span></li>
+                        <li>Total Losses: <span id="total-losses"></span></li>
+                        <li>Total Draws: <span id="total-draws"></span></li>
+                        <li>Rounds Played: <span id="rounds-played"></span></li>
+                    </ul>
+                </div>
+            <div class="config-panel" id="config-panel">
+                <h3>With how many decks you want to play? (2-8)</h3>
+                <input type="number" id="deck-number" min="2" max ="8" value="2">
+                <button id="start-game-button">START GAME</button>
+            </div>
+            <div class="round-end-panel" id="round-end-panel">
+                <h2 id="result-text" class="biggerh2"></h2>
+                <h3>Do you want to play another round or restart the game?</h3>
+                <button id="restart-button">RESTART</button>
+                <button id="replay-button">KEEP PLAYING</button>
+            </div>
+        </div>
+    </body>
+</html> 

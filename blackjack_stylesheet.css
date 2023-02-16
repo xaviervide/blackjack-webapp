@@ -1,0 +1,159 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+.dealer-cards img,
+.player-cards img{
+    height: 96%;
+    margin: 2px;
+}
+
+/*/https://www.youtube.com/watch?v=T5RIh4StIvs*/
+.vertical-align{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.biggerh2{
+    font-size: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 14% 20% 32% 20% 14%;
+    grid-template-rows: 35% 15% 35% 15%;
+    height: 100vh;
+    background: rgb(46,136,64);
+    background: radial-gradient(circle, rgba(46,136,64,1) 17%, rgba(80,218,151,1) 87%);
+}
+
+.dealer-cards{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 2;
+}
+
+.dealer-card-count{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 2;
+}
+
+.player-cards{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 2;
+}
+
+.player-card-count{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    z-index: 2;
+}
+
+.hit-button{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    z-index: 2;
+}
+
+#hit-button,
+#stay-button{
+    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 40px;
+    padding: 3% 10%;
+}
+
+.stay-button{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    z-index: 2;
+}
+
+.game-stats{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 2;
+    text-align: left;
+}
+
+.config-panel{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 3;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+    display: none;
+}
+
+.round-end-panel{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 4;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+    display: none;
+}
+
+.round-end-panel h3,
+h2{
+    margin: 0;
+}
+
+#restart-button,
+#replay-button{
+    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 1% 10%;
+}
+
+#deck-number{
+    border-radius: 30px;
+    width: 20%;
+}
+
+#start-game-button{
+    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 2% 3%;
+}
+
+#result-text{
+    color: red;
+}
+
+ul{
+    list-style-type: none;
+}
